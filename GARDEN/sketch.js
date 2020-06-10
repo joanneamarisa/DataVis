@@ -489,7 +489,7 @@ function HoverD(mx, my) {
 		let textFill = 255;
 		
 		fill(0, textFill);
-		text('- A PINK FLOWER represents a love emoji', mouseX, mouseY+20);
+		text('- A PINK FLOWER represents a messafe of love', mouseX, mouseY+20);
 	} else {textFill = 0;}
 
 }
