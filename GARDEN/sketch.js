@@ -37,15 +37,11 @@ function preload() {
 }
 
 function setup() {
-  
-  song.play();
-  song.loop();
-  song.setVolume(1);
 
   listLength = (table.getRowCount());
   createCanvas(windowWidth, windowHeight);
 
-  frameRate(30);
+  frameRate(25);
   fullDate = (table.get(1, 'DATE'));
   day = fullDate.substring(0, 2);
   today = day;
@@ -579,6 +575,12 @@ function HoverG(mx, my) {
 		text('- YELLOW FLOWERS symbolise days where my mother spoke the most', mouseX, mouseY+10);
 	} else {textFill = 0;}
 
+}
+
+function keyPressed () {
+song.play();
+  song.loop();
+  song.setVolume(1);
 }
 
 
