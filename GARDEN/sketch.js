@@ -63,7 +63,7 @@ function draw() {
   fill(0);
   textFont('garamond', 15);
   text(subhead, 60, 80, 375, 150);
-  text('Song: Edelweiss by Irwin Kostal Press space to play!', windowWidth-300, 60, 300,200);
+  text('Song: Edelweiss by Irwin Kostal Press space to play!', windowWidth-300, 60, 225,200);
   let name = 'Joanne Amarisa (S3652802) Visualising Data Through Art RMIT University 2020'
   text(name, windowWidth-300, Ground-90, 200,100);
   pop();
