@@ -97,7 +97,7 @@ function draw() {
         translate(Flowerx, Flowery);
         scale(0.2);
 
-        let Random = random(3.6);
+        let Random = random(3, 3.1);
         let JoFlower = beginShape(LINES);
         for (let a = 0; a < 360; a += Random) {
           let FX = 100 * sin(a);
@@ -128,7 +128,7 @@ function draw() {
         translate(Flowerx, Flowery);
         scale(0.2);
 
-        let Random = random(5.3);
+        let Random = random(5.3, 5.5);
         beginShape(LINES);
         for (let a = 0; a < 360; a += Random) {
           let FX = 100 * sin(a);
@@ -160,7 +160,7 @@ function draw() {
         translate(Flowerx, Flowery);
         scale(0.2);
 
-        let Random = random(9);
+        let Random = random(9, 9.05);
 
         beginShape(LINES);
         for (let a = 0; a < 360; a += Random) {
