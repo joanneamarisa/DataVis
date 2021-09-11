@@ -7,6 +7,7 @@ let MomCount = 0;
 let leafA, leafB;
 
 var song;
+var button;
 var leafJo, leafMom, questionJo, questionMom, loveJo, loveMom, careMom, prayJo, prayMom;
 
 let y = 0;
@@ -34,6 +35,9 @@ function preload() {
   prayMom = loadImage('elements-09.svg');
   soundFormats('mp3');
   song = loadSound('Edelweiss(instrumental).mp3');
+button = createButton('Play song');
+  button.position(windowWidth-300, 105);
+  button.mousePressed(togglePlaying);
 }
 
 function setup() {
@@ -577,10 +581,13 @@ function HoverG(mx, my) {
 
 }
 
-function keyPressed () {
-song.play();
-  song.loop();
-  song.setVolume(1);
+function togglePlaying() {
+  if (!song.isPlaying()) {
+    song.play();
+    button.html("Pause song");
+  } else {
+    song.pause();
+    button.html("Play song");
+  }
 }
-
 
