@@ -35,16 +35,15 @@ function preload() {
   prayMom = loadImage('elements-09.svg');
   soundFormats('mp3');
   song = loadSound('Edelweiss(instrumental).mp3');
-button = createButton('Play song');
-  button.position(windowWidth-300, 105);
-  button.mousePressed(togglePlaying);
 }
 
 function setup() {
 
   listLength = (table.getRowCount());
   createCanvas(windowWidth, windowHeight);
-
+button = createButton('Play song');
+  button.position(windowWidth-300, 105);
+  button.mousePressed(togglePlaying);
   frameRate(25);
   fullDate = (table.get(1, 'DATE'));
   day = fullDate.substring(0, 2);
