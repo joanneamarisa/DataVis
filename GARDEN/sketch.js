@@ -224,11 +224,11 @@ function draw() {
       fill(255);
       noStroke();
       // JO'S TEXTS GO LEFT
-      image(leafJo, day * flowerSpacing - 15, lineYMap, 15, 15);
-      if (!checkLeafCoordinates(day * flowerSpacing - 15, lineYMap)) {
+      image(leafJo, day * flowerSpacing - 15, lineYMap-15, 15, 15);
+      if (!checkLeafCoordinates(day * flowerSpacing - 15, lineYMap-15)) {
         let leafObject = {
           x: day * flowerSpacing - 15,
-          y: lineYMap,
+          y: lineYMap-15,
         };
         leafCoordinates.push(leafObject);
       }
@@ -237,12 +237,12 @@ function draw() {
       fill(255);
       noStroke();
       // MOM'S TEXTS GO RIGHT
-      image(leafMom, day * flowerSpacing, lineYMap, 15, 15);
+      image(leafMom, day * flowerSpacing, lineYMap-15, 15, 15);
 
-      if (!checkLeafCoordinates(day * flowerSpacing, lineYMap)) {
+      if (!checkLeafCoordinates(day * flowerSpacing, lineYMap-15)) {
         let leafObject = {
           x: day * flowerSpacing,
-          y: lineYMap,
+          y: lineYMap-15,
         };
         leafCoordinates.push(leafObject);
       }
@@ -251,12 +251,12 @@ function draw() {
     // TAKE CARE: PURPLE FLOWERS
     let TakeCare = table.get(i, 11);
     if (TakeCare === "TRUE") {
-      image(careMom, day * flowerSpacing, lineYMap, 18, 18);
+      image(careMom, day * flowerSpacing, lineYMap-18, 18, 18);
 
-      if (!checkCareCoordinates(day * flowerSpacing, lineYMap)) {
+      if (!checkCareCoordinates(day * flowerSpacing, lineYMap-18)) {
         let careObject = {
           x: day * flowerSpacing,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         careCoordinates.push(careObject);
       }
@@ -266,21 +266,21 @@ function draw() {
     let JQuestions = table.get(i, 6);
     let MQuestions = table.get(i, 12);
     if (JQuestions === "TRUE") {
-      image(questionJo, day * flowerSpacing - 18, lineYMap, 18, 18);
+      image(questionJo, day * flowerSpacing - 18, lineYMap-18, 18, 18);
 
-      if (!checkQCoordinates(day * flowerSpacing - 18, lineYMap)) {
+      if (!checkQCoordinates(day * flowerSpacing - 18, lineYMap-18)) {
         let QObject = {
           x: day * flowerSpacing - 18,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         QCoordinates.push(QObject);
       }
     } else if (MQuestions === "TRUE") {
-      image(questionMom, day * flowerSpacing, lineYMap, 18, 18);
-      if (!checkQCoordinates(day * flowerSpacing, lineYMap)) {
+      image(questionMom, day * flowerSpacing, lineYMap-18, 18, 18);
+      if (!checkQCoordinates(day * flowerSpacing, lineYMap-18)) {
         let QObject = {
           x: day * flowerSpacing,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         QCoordinates.push(QObject);
       }
@@ -290,22 +290,22 @@ function draw() {
     let JLove = table.get(i, 7);
     let MLove = table.get(i, 13);
     if (JLove === "TRUE") {
-      image(loveJo, day * flowerSpacing - 18, lineYMap, 18, 18);
+      image(loveJo, day * flowerSpacing - 18, lineYMap-18, 18, 18);
 
-      if (!checkLoveCoordinates(day * flowerSpacing - 18, lineYMap)) {
+      if (!checkLoveCoordinates(day * flowerSpacing - 18, lineYMap-18)) {
         let loveObject = {
           x: day * flowerSpacing - 18,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         loveCoordinates.push(loveObject);
       }
     } else if (MLove === "TRUE") {
-      image(loveMom, day * flowerSpacing, lineYMap, 18, 18);
+      image(loveMom, day * flowerSpacing, lineYMap-18, 18, 18);
 
-      if (!checkLoveCoordinates(day * flowerSpacing, lineYMap)) {
+      if (!checkLoveCoordinates(day * flowerSpacing, lineYMap-18)) {
         let loveObject = {
           x: day * flowerSpacing,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         loveCoordinates.push(loveObject);
       }
@@ -315,22 +315,22 @@ function draw() {
     let JPray = table.get(i, 8);
     let MPray = table.get(i, 14);
     if (JPray === "TRUE") {
-      image(prayJo, day * flowerSpacing - 18, lineYMap, 18, 18);
+      image(prayJo, day * flowerSpacing - 18, lineYMap-18, 18, 18);
 
-      if (!checkPrayCoordinates(day * flowerSpacing - 18, lineYMap)) {
+      if (!checkPrayCoordinates(day * flowerSpacing - 18, lineYMap-18)) {
         let prayObject = {
           x: day * flowerSpacing - 18,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         prayCoordinates.push(prayObject);
       }
     } else if (MPray === "TRUE") {
-      image(prayMom, day * flowerSpacing, lineYMap, 18, 18);
+      image(prayMom, day * flowerSpacing, lineYMap-18, 18, 18);
 
-      if (!checkPrayCoordinates(day * flowerSpacing, lineYMap)) {
+      if (!checkPrayCoordinates(day * flowerSpacing, lineYMap-18)) {
         let prayObject = {
           x: day * flowerSpacing,
-          y: lineYMap,
+          y: lineYMap-18,
         };
         prayCoordinates.push(prayObject);
       }
