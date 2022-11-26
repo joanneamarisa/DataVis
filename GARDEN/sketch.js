@@ -204,7 +204,7 @@ function draw() {
     stroke(94, 119, 3);
     strokeWeight(1.5);
 
-    line(day * flowerSpacing, lineYMap, day * flowerSpacing, lineYMap);
+    line(day * flowerSpacing, lineYMap, day * flowerSpacing, lineYMap-8);
 
     // "y" IS HEIGHT BETWEEN EACH LEAF
 
