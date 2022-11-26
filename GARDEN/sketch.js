@@ -103,7 +103,7 @@ function draw() {
     if (today != day) {
       push();
       let Flowerx = today * flowerSpacing;
-      let Flowery = (map(lineY, maxHeight, minHeight, Ground, 100)) - 20;
+      let Flowery = (map(lineY, minHeight, maxHeight, 50, Ground)) - 20;
 
       //THESE ARE THE COLOURS OF THE FLOWERS
 
@@ -204,7 +204,7 @@ function draw() {
     stroke(94, 119, 3);
     strokeWeight(1.5);
 
-    line(day * flowerSpacing, lineYMap, day * flowerSpacing, lineYMap-8);
+    line(day * flowerSpacing, lineYMap, day * flowerSpacing, lineYMap-10);
 
     // "y" IS HEIGHT BETWEEN EACH LEAF
 
