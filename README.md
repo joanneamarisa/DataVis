@@ -1,6 +1,6 @@
-# Data Garden Project : Module 6 Sample
+# What flowers bloom in winter?
 The Data Garden Project offers a learning syllabus and community for young people to share data-driven stories from their lives and surroundings using creative code.
-This file is a sample from our Module 6 exercise on publishing your p5.js sketch with GitHub Pages, paired with introductions to a combination of HTML and CSS. 
+This file is** a sample from our Module 6 exercise** on publishing your p5.js sketch with GitHub Pages, paired with introductions to a combination of HTML and CSS. 
 
 ## The Story
 You can use a GitHub README file like this to **write about the journey and rationale of your data viz project**. Starting with the story: What made you choose this topic or theme? Where did the idea come from?
