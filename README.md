@@ -9,6 +9,9 @@ You can use a GitHub README file like this to **write about the journey and rati
 Next, we all love to hear about your data of course. What was the dataset you've gathered in the 14 days? What were the methods you used? What did you find out about yourself or your surroundings through the process?
 
 ## The Visualisation
+
+<img width="600" alt="Screen Shot 2023-09-19 at 1 14 13 pm" src="https://github.com/joanneamarisa/DataVis/assets/66515877/2feb44e8-678e-4297-9b3a-99391ebab1bc">
+
 Also, why not share the inspirations that led to your specific visualisation? What were some artworks that inspired you? Why did you choose this approach for your visualisation? How does it represent the data and/or you?
 Try adding different README elements:
 > Maybe an inspiring quote?
